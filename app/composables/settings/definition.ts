@@ -60,10 +60,8 @@ export interface ThemeColors {
   '--rgb-dark-primary': string
 }
 
-export function getDefaultLanguage(languages: string[]) {
-  if (import.meta.server)
-    return 'en-US'
-  return matchLanguages(languages, navigator.languages) || 'en-US'
+export function getDefaultLanguage() {
+  return 'tr-TR'
 }
 
 export const DEFAULT__PREFERENCES_SETTINGS: PreferencesSettings = {
@@ -92,9 +90,9 @@ export const DEFAULT__PREFERENCES_SETTINGS: PreferencesSettings = {
   experimentalEmbeddedMedia: false,
 }
 
-export function getDefaultUserSettings(locales: string[]): UserSettings {
+export function getDefaultUserSettings(): UserSettings {
   return {
-    language: getDefaultLanguage(locales),
+    language: 'tr',
     fontSize: DEFAULT_FONT_SIZE,
     disabledTranslationLanguages: [],
     preferences: DEFAULT__PREFERENCES_SETTINGS,
