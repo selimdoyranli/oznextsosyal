@@ -24,7 +24,7 @@ const { busy, oauth, singleInstanceServer } = useSignIn()
       <span v-else aria-hidden="true" block i-ri:login-circle-line class="rtl-flip" />
       {{ $t('action.sign_in') }}
     </button>
-    <button v-else btn-solid rounded-3 text-center mt-2 select-none @click="openSigninDialog()">
+    <button v-else btn-solid rounded-3 text-center mt-2 select-none @click="oauth()">
       {{ $t('action.sign_in') }}
     </button>
   </div>
