@@ -4,7 +4,8 @@
   </a>
 </p>
 
-<h1 align="center"/>oznextsosyal <sup><em>alpha</em></sup></h1>
+<h1 align="center"/>Öz Next Sosyal <sup><em>alpha</em></sup></h1>
+<h2 align="center">Yerli ve milli sosyal medya</h2>
 
 <p align="center">
 Türkçe Mastodon web istemcisi

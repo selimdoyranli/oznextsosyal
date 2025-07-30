@@ -53,7 +53,7 @@ function toggleDark() {
       <NuxtLink
         v-if="buildInfo.env === 'release'"
         external
-        :href="`https://github.com/oznextsosyal/elk/releases/tag/v${buildInfo.version}`"
+        :href="`https://github.com/selimdoyranli/oznextsosyal/releases/tag/v${buildInfo.version}`"
         target="_blank"
         font-mono
       >
@@ -64,7 +64,7 @@ function toggleDark() {
         &middot;
         <NuxtLink
           external
-          :href="`https://github.com/oznextsosyal/elk/commit/${buildInfo.commit}`"
+          :href="`https://github.com/selimdoyranli/oznextsosyal/commit/${buildInfo.commit}`"
           target="_blank"
           font-mono
         >
@@ -87,8 +87,12 @@ function toggleDark() {
         Mastodon
       </NuxtLink>
       &middot;
-      <NuxtLink href="https://github.com/oznextsosyal/elk" target="_blank" external>
+      <NuxtLink href="https://github.com/selimdoyranli/oznextsosyal" target="_blank" external>
         GitHub
+      </NuxtLink>
+      <br>
+      <NuxtLink href="" target="_blank">
+        Yerli ve milli sosyal medya, @selimdoyranli tarafından
       </NuxtLink>
     </div>
   </footer>

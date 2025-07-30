@@ -25,6 +25,7 @@ function handleShowCommit() {
     </template>
 
     <div flex="~ col gap4" w-full items-center justify-center my5>
+      <h2>Elk kullanır</h2>
       <img :alt="$t('app_logo')" :src="`${''}/logo.svg`" w-24 h-24 class="rtl-flip">
       <p text-lg>
         {{ $t('app_desc_short') }}
@@ -85,23 +86,6 @@ function handleShowCommit() {
     />
 
     <div h-1px bg-border my2 />
-
-    <p px5 py3 font-bold text-lg>
-      {{ $t('settings.about.sponsors') }}
-    </p>
-
-    <p px5 text-secondary>
-      {{ $t('settings.about.sponsors_body_1') }}
-    </p>
-
-    <LazySettingsSponsorsList />
-
-    <p px5 mb1 text-secondary>
-      {{ $t('settings.about.sponsors_body_2') }}
-    </p>
-    <p px5 mb2 text-secondary>
-      {{ $t('settings.about.sponsors_body_3') }}
-    </p>
 
     <SettingsItem
       :text="$t('settings.about.sponsor_action')"
