@@ -38,7 +38,7 @@ Bu proje, [Elk](https://github.com/elk-zone/elk) projesinin Türk kullanıcılar
    ```bash
    # pnpm ile (önerilen)
    pnpm install
-   
+
    # veya npm ile
    npm install --legacy-peer-deps
    ```
@@ -47,7 +47,7 @@ Bu proje, [Elk](https://github.com/elk-zone/elk) projesinin Türk kullanıcılar
    ```bash
    # pnpm ile
    pnpm dev
-   
+
    # veya npm ile
    npm run dev
    ```
@@ -113,7 +113,7 @@ pnpm typecheck
 
 Konfigürasyonu değiştirmek için `nuxt.config.ts` dosyasını düzenleyin:
 
-```typescript
+```bash
 runtimeConfig: {
   public: {
     defaultServer: 'mastoturk.org',  // Varsayılan sunucu
@@ -141,7 +141,7 @@ oznextsosyal, Progressive Web App olarak çalışır:
 
 ```typescript
 THEME_COLORS = {
-  defaultTheme: '#cc7d24',
+  defaultTheme: '#002FFF',
   themeDark: '#111111',
   themeLight: '#fafafa',
   backgroundDark: '#fafafa',
@@ -210,4 +210,4 @@ Bu proje [Elk](https://github.com/elk-zone/elk) projesinin üzerine inşa edilmi
 
 ---
 
-**oznextsosyal** - Türkçe Mastodon deneyimi için geliştirilmiştir 🇹🇷 
+**oznextsosyal** - Türkçe Mastodon deneyimi için geliştirilmiştir 🇹🇷
