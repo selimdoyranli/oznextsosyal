@@ -7,7 +7,7 @@
   "homepage": "https://oznextsosyal.com/",
   "main": "./nuxt.config.ts",
   "engines": {
-    "node": "23.9.0"
+    "node": "22.17.1"
   },
   "scripts": {
     "build": "nuxi build",
