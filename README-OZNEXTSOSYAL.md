@@ -17,7 +17,7 @@ Bu proje, [Elk](https://github.com/elk-zone/elk) projesinin Türk kullanıcılar
 
 ### Gereksinimler
 
-- Node.js 23.9.0 veya üzeri
+- Node.js 22.17.1 veya üzeri
 - npm veya pnpm
 
 ### Hızlı Kurulum

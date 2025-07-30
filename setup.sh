@@ -4,7 +4,7 @@ echo "🚀 Setting up oznextsosyal - Türkçe Mastodon Web İstemcisi"
 echo "=================================================="
 
 # Check if Node.js version is correct
-REQUIRED_NODE="23.9.0"
+REQUIRED_NODE="22.17.1"
 CURRENT_NODE=$(node --version | cut -d'v' -f2)
 
 if [ "$CURRENT_NODE" != "$REQUIRED_NODE" ]; then
