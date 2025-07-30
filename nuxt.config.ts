@@ -276,9 +276,9 @@ export default defineNuxtConfig({
         { name: 'apple-mobile-web-app-status-bar-style', content: 'default' },
         // open graph social image
         { property: 'og:title', content: 'oznextsosyal' },
-        { property: 'og:description', content: 'Türkçe Mastodon web istemcisi' },
+        { property: 'og:description', content: 'Yerli ve milli sosyal medya' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://elk.zone/oznextsosyal-og.png' },
+        { property: 'og:image', content: 'https://oznextsosyal.com/oznextsosyal-og.png' },
         { property: 'og:image:width', content: '3800' },
         { property: 'og:image:height', content: '1900' },
         { property: 'og:site_name', content: 'oznextsosyal' },
