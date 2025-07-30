@@ -278,7 +278,7 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'oznextsosyal' },
         { property: 'og:description', content: 'Türkçe Mastodon web istemcisi' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image', content: 'https://elk.zone/elk-og.png' },
+        { property: 'og:image', content: 'https://elk.zone/oznextsosyal-og.png' },
         { property: 'og:image:width', content: '3800' },
         { property: 'og:image:height', content: '1900' },
         { property: 'og:site_name', content: 'oznextsosyal' },
