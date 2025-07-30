@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  oznextsosyal:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: oznextsosyal
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - NUXT_HOST=0.0.0.0
+      - NUXT_PORT=3000
+    volumes:
+      - ./oznextsosyal-storage:/elk/data
+    networks:
+      - oznextsosyal-network
+
+  # Optional: Nginx reverse proxy with SSL
+  nginx:
+    image: nginx:alpine
+    container_name: oznextsosyal-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - oznextsosyal
+    networks:
+      - oznextsosyal-network
+
+networks:
+  oznextsosyal-network:
+    driver: bridge
+
+volumes:
+  oznextsosyal-storage:
+    driver: local 
